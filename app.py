@@ -2,7 +2,10 @@ import streamlit as st
 import pickle
 import re
 import string
+import nltk
 
+nltk.download('stopwords')
+nltk.download('punkt')
 from nltk.corpus import stopwords
 
 # LOAD MODEL
