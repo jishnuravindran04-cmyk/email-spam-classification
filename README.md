@@ -226,7 +226,9 @@ The final model was deployed using Streamlit for real-time spam prediction.
 
 ## 🚀 Deployment Link
 
-Deployment in progress...
+http://localhost:8501/
+
+
 
 
 
