@@ -229,8 +229,4 @@ The final model was deployed using Streamlit for real-time spam prediction.
 Deployment in progress...
 
 
-```bash
-svm_model.pkl
-naive_bayes_model.pkl
-tfidf_vectorizer.pkl
-tokenizer.pkl
+
