@@ -4,6 +4,12 @@ A complete Natural Language Processing (NLP) project for detecting whether an em
 
 ---
 
+
+## Live Demo
+
+🔗 [Email Spam Classification App](https://email-spam-classification-9cgytfxogqggtbuan8wcu5.streamlit.app/)
+
+
 ## 🚀 Project Overview
 
 Email spam detection is one of the most important applications of Natural Language Processing (NLP). Spam emails may contain advertisements, phishing links, malicious content, or fraudulent messages that can compromise user security.
