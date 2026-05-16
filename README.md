@@ -1,5 +1,5 @@
 # email-spam-classification
- Email spam classification using NLP and Machine Learning
+ This project classifies email/messages as Spam or Ham using Natural Language Processing (NLP), TF-IDF vectorization, and Machine Learning models. The final model was deployed as an interactive Streamlit web application for real-time predictions.
 
 
 ## Project Overview
