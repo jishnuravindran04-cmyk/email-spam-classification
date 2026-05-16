@@ -2,8 +2,11 @@ import streamlit as st
 import pickle
 import re
 import string
+import nltk
 
 from nltk.corpus import stopwords
+
+nltk.download('stopwords', quiet=True)
 
 # LOAD MODEL
 model = pickle.load(
@@ -19,6 +22,8 @@ tfidf = pickle.load(
 stop_words = set(stopwords.words('english'))
 
 # PREPROCESS FUNCTION
+
+
 def preprocess_text(text):
 
     text = text.lower()
@@ -38,6 +43,7 @@ def preprocess_text(text):
 
     return " ".join(words)
 
+
 # TITLE
 st.title("📧 Email Spam Classifier")
 
@@ -48,18 +54,20 @@ user_input = st.text_area(
 
 # PREDICT BUTTON
 if st.button("Predict"):
+    if user_input and user_input.strip():
+        cleaned_input = preprocess_text(user_input)
 
-    cleaned_input = preprocess_text(user_input)
+        vector_input = tfidf.transform(
+            [cleaned_input]
+        )
 
-    vector_input = tfidf.transform(
-        [cleaned_input]
-    )
+        prediction = model.predict(
+            vector_input
+        )
 
-    prediction = model.predict(
-        vector_input
-    )
-
-    if prediction[0] == 1:
-        st.error("Spam Email Detected")
+        if prediction[0] == 1:
+            st.error("Spam Email Detected")
+        else:
+            st.success("Ham Email")
     else:
-        st.success("Ham Email")
+        st.info("Please enter an email message before predicting.")

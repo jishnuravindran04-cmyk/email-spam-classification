@@ -22,6 +22,20 @@ The project includes:
 
 ---
 
+## ▶️ Run the Streamlit App
+
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Launch the app:
+   ```bash
+   streamlit run app.py
+   ```
+3. Open the local URL shown in the terminal to use the email spam classifier.
+
+---
+
 ## 🎓 Course Details
 
 | Field | Details |
