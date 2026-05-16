@@ -57,3 +57,13 @@ The trained spam classification model was deployed using Streamlit for interacti
 - TF-IDF vectorization
 - Clean user interface
 
+
+## Text Preprocessing Pipeline
+
+The input text undergoes several NLP preprocessing steps before prediction:
+
+1. Convert text to lowercase
+2. Remove numbers
+3. Remove punctuation
+4. Remove stopwords
+5. Transform text using TF-IDF vectorization
