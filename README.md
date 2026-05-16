@@ -4,6 +4,12 @@ A complete Natural Language Processing (NLP) project for detecting whether an em
 
 ---
 
+
+## Live Demo
+
+🔗 [Email Spam Classification App](https://email-spam-classification-9cgytfxogqggtbuan8wcu5.streamlit.app/)
+
+
 ## 🚀 Project Overview
 
 Email spam detection is one of the most important applications of Natural Language Processing (NLP). Spam emails may contain advertisements, phishing links, malicious content, or fraudulent messages that can compromise user security.
@@ -19,6 +25,20 @@ The project includes:
 - TF-IDF feature extraction
 - Machine Learning & Deep Learning models
 - Streamlit deployment for real-time prediction
+
+---
+
+## ▶️ Run the Streamlit App
+
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Launch the app:
+   ```bash
+   streamlit run app.py
+   ```
+3. Open the local URL shown in the terminal to use the email spam classifier.
 
 ---
 
